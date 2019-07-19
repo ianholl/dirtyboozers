@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Pac-Man</title>
+    <!-- last updated: Tue 17 Oct 2017 16:50:08 AEDT -->
+    <!-- Lock viewport on mobile devices. -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  
+    <!-- Allow page to be saved as web app on iOS. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Hide status bar -->
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- icon used for iOS Web App -->
+    <link rel="apple-touch-icon-precomposed" href="pacboozer/icon/ios_icon.png"/>
+
+
+    <link rel="DBpint Icon" href="images/DBpintBLKfill.png" type="image/png">
+    <link href="aaa_style.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <style>
+        body {
+            margin:0;
+            background: rgb(0, 0, 0);
+        }
+        @font-face {
+            font-family: 'ArcadeR';
+            src: url('pacboozer/font/ARCADE_R.TTF');
+            /*
+            src: url('pacboozer/font/PressStart2P.ttf');
+            */
+        }
+        #canvas-warning {
+            color: #FF0;
+            font-size: 1.5em;
+        }
+/*	* {box-sizing: border-box}
+*/
+	.container {
+	    position: absolute;
+      top: 0;
+      margin-top: 0px;
+	    left: 0;	    
+	    width: 100%;	    
+	    text-align: center;
+	}
+	.image {
+      position: absolute;
+	    width: 100%;
+	    max-width: 125px;
+	    height: auto;
+	    left: 50%;
+	    top: 0;
+	    margin-top: 80px;
+      margin-left: -50px;
+	    opacity: 0.5;
+      z-index: 10;
+	}
+    </style>
+
+</head>
+
+<body>
+  
+
+  <!-- HEADER DETAIL -->
+	<header>
+    <div class="topnav" id="myTopnav">
+      <a class="fa fa-bars" href="javascript:void(0);" onclick="openNav()"></a>
+    </div>
+    <div class="headerTLa">
+      <a href="index">Dirty Boozers</a>
+    </div>
+    <div class="headerTLb">
+      <nav class="navLink">
+        <a style="opacity: 0.7" href="index"><u>HOME</u></a>
+        <a href="about-us">about us</a>
+        <a href="dirty-boozers">dirty boozers</a>
+        <a href="https://www.google.com/maps/@/data=!3m1!4b1!4m3!11m2!2sZm12SIevBAeVZ6pI3kI6r19mNY9ZyA!3e3?shorturl=1" target="_blank">find nearest boozer</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- NAVIGATION OVERLAY DETAIL -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index"><strong>Home</strong></a> <hr>
+      <a href="about-us">About Us</a> <hr>
+      <a href="dirty-boozers">Dirty Boozers</a> <hr>
+      <a href="https://www.google.com/maps/@/data=!3m1!4b1!4m3!11m2!2sZm12SIevBAeVZ6pI3kI6r19mNY9ZyA!3e3?shorturl=1" target="_blank">Find Nearest Boozer</a>
+    </div>
+  </div>
+  
+<br>
+<br>
+<br>
+<br>
+
+<!--  PACMAN GAME START -->
+  <div id='container'> <a href="https://tokensoft.io" target="_blank"><img src="pacboozer/icon/logo_white.png" alt="Avatar" class="image"></a> 
+  </div>
+
+  <div style='font-family: ArcadeR'> </div>
+  <canvas id='canvas'><div id="canvas-warning">Your browser does not support HTML Canvas.  Please upgrade!</div></canvas>
+  <canvas id='atlas' style="display:none"></canvas>
+<!--  PACMAN GAME END -->
+
+  <!-- FOOTER DETAIL
+  <footer class="pacFooter">
+      <div class="footerTLa">
+      Copyright © 2018 Dirty Boozers - All Rights Reserved.
+      </div>
+      <div class="footerTLb">
+        <a class="fa fa-facebook" href="javascript:void(0);" onclick="openFacebook()"></a>
+        <a class="fa fa-twitter" href="javascript:void(0);" onclick="openTwitter()"></a>
+        <a class="fa fa-instagram" href="javascript:void(0);" onclick="openInstagram()"></a>
+      </div>
+    </footer>  -->
+  
+
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="aaa_script.js"></script>
+
+
+</body>
+
+<script src="pacboozer/pacman.js"> </script>
+
+<script>
+window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
+</script>
+
+</html>

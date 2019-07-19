@@ -1,0 +1,548 @@
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+.homeImg {
+  background: url(images/Beer1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+h1{
+  text-transform:uppercase;
+  font-family: 'Fjalla One', Times, serif;
+  font-size:300%;
+  font-weight:400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.h1small{
+  margin-top: 40px;
+}
+h2 {
+  margin-top: 0px;
+  font-size: 22px;
+  color: rgb(200, 200, 200);
+  overflow-wrap: break-word;
+  font-family: 'Source Sans Pro', Arial, serif;
+}
+h3 {
+  line-height: 0;
+  font-size:18px;
+  font-family: 'Source Sans Pro', Arial, serif;
+  color: rgb(180, 180, 180);
+}
+h4{
+  text-transform:uppercase;
+  font-family: 'Fjalla One', Times, serif;
+  font-size:35px;
+  margin:inherit;
+  color: rgb(200, 200, 200);
+}
+p {
+  color: rgb(145, 145, 145);
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Source Sans Pro', arial, sans-serif;
+}
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.imgMain {
+  width: 80%;
+  max-width: 800px;
+  border-style: solid;
+  border-color:grey;
+}
+.imgDB {
+  /* background-size: cover; */
+  width: 80%;
+  max-width: 350px;
+  max-height: 250px;
+  border-style: solid;
+  border-color:rgb(150, 150, 150);
+  cursor: pointer;
+}
+.imgDB:hover{
+  opacity:0.9;
+  border-color:rgb(200, 200, 200);
+}
+.DBbutton {
+  background-color: rgb(201, 201, 201);
+  color: rgb(45, 45, 45);
+  margin-top: 10px;
+  padding: 10px 50px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-weight:700;
+}
+.DBbutton:hover{
+  background-color: rgb(165, 165, 165);
+}
+hr {
+  margin:20px;
+  font-weight:1000;
+}
+
+/* Style the header */
+header, footer {
+  background: #222222;
+  color: white;
+}
+header{
+  position:fixed;
+  top:0;left:0;right:0;
+  padding: 15px 110px 15px 110px;
+  font-family: 'Fjalla One', Times, serif;
+  text-transform:uppercase;
+  font-size: 22px;
+}
+
+.headerTLa a{
+  float:left;
+  text-decoration:none;
+  color:white;
+}
+.headerTLb nav{
+  text-align:right;
+  font-size:16px;
+  margin-top: 3px;
+}
+.navLink{
+  color:#e2e2e2;
+  font-family: 'Source Sans Pro', arial, sans-serif;
+}
+.navLink a{
+  text-decoration:none;
+  color:#e2e2e2;
+  margin-left: 25px;
+  font-family: 'Source Sans Pro', arial, sans-serif;
+}
+.navLink a:hover{
+  opacity: 0.7;
+}
+.homeContainer{
+  background:black;
+  opacity: 0.75;
+  padding: 60px 100px;
+  color:#e2e2e2;
+  text-align:center;
+}
+.aboutContainer{
+  background:black;
+  padding: 20px 100px;
+  color:#e2e2e2;
+  text-align:center;
+}
+.DBContainer {
+  background:black;
+  padding: 90px 100px 10px;
+  color:#e2e2e2;
+  text-align:center;
+}
+.pubContainer {
+  background:black;
+  padding: 110px 30px 0px;
+  color:#e2e2e2;
+  text-align:center;
+}
+.pubContainerCol {
+  box-sizing: border-box;
+  width: 100%;
+  background:black;
+  display:inline-block;
+}
+.pubContainerColL {
+  padding: 0px 60px 30px 0px;
+  margin-left: 10%;
+  text-align:justify;
+  width: 50%;
+  float: left;
+}
+.pubContainerColR {
+  padding: 0px 0px 30px;
+  margin-right: 10%;
+  color:white;
+  text-align: justify;
+}
+.pubPhotos{
+  padding: 40px 0px 20px;
+  background: #0a0a0a;
+  text-align:center;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .fa {
+  display: none;
+  text-decoration:none;
+  color:white;
+  text-align:left;
+  position:absolute;
+  margin-top:-1px;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+/*allows clicking*/
+.topnav.responsive {position: relative;}
+.topnav.responsive .fa {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+footer {
+  font-family: 'Fjalla One', Times, serif;
+  padding: 15px 110px;
+  text-transform:uppercase;
+  font-size: 10px;
+
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
+
+}
+.pacFooter {
+  position:absolute; 
+  width:100%; 
+  box-sizing: border-box; 
+  left:0%; 
+  right:0%;
+}
+.footerTLa {
+  text-align:left;
+  float:left;
+  color: rgb(200, 200, 200);
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.footerTLb {
+  text-align:right;
+}
+
+u {
+  text-decoration:none;
+  border-bottom: 2px solid currentColor;
+}
+
+/* Social Media Icons*/
+.fa {
+  padding: 10px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-caret-down {
+  padding: 0px;
+  margin: 0px 0px 0px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook, .fa-twitter, .fa-instagram {
+  background: black;
+  color: white;
+}
+
+
+/*Responsive Design Inputs*/
+@media screen and (max-width: 900px) {
+  header {
+    padding: 15px 20px;
+  }
+  .headerTLa {
+    text-align:center;
+    margin-top:7px;
+  }
+  .headerTLa a {
+    float:none;
+  }
+  .headerTLb a {
+    display:none;
+  }
+  .headerTLb{
+    margin-top:0px;
+  }
+  /*Adds-IconNav*/
+  .topnav a.fa {
+    display:block;
+  }
+  .homeContainer {
+    padding: 60px 20px;
+  }
+  .DBContainer {
+    padding: 110px 20px 5px;
+  }
+  h1 {
+    font-size: 39px;
+  }
+  .footerTLa, .footerTLb {
+    float:none;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .pacFooter {
+    display:none;
+  }
+  .aboutContainer{
+    padding: 20px 20px 30px;
+    text-align:justify;
+  }
+  .imgMain {
+   width: 95%;
+  }
+  .pubContainerColL {
+    padding: 0px 20px 0px;
+    float: none;
+    width: auto;
+    margin-left: 0;
+  }
+  .pubContainerColR {
+    padding: 20px 20px;
+    float: none;
+    width: auto;
+    margin-right: 0;
+  }
+  .h1small{
+    font-size:0px;
+    margin-top: 10px;
+  }
+  .pubContainer {
+  padding: 110px 30px 0px;
+  }
+}
+
+/* NAVIGATION OVERLAY STYLING */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.85);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+  font-size:10px;
+  font-weight:100;
+  white-space: nowrap;
+}
+.overlay a {
+  font-family: 'Source Sans Pro', arial, sans-serif;
+  padding: 0px;
+  margin-left:30px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f7f7f7;
+  display: block;
+}
+.overlay a:hover, .overlay a:focus {
+  color: rgba(180,180,180,0.5);
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 35px;
+  font-weight:100;
+}
+/* Responsive for excessive height - Not Really Needed I don't think*/
+/*
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+*/
+
+.DBtables {
+  box-sizing: border-box;
+}
+/* Create three equal columns that floats next to each other */
+.row {
+  display :grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.column {
+  background-color:black;
+  color:white;
+  text-align:center;
+  margin-bottom: 20px;
+}
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+   cursor: pointer;
+}
+
+/* MODAL GALLERY */
+ /* Style the Image Used to Trigger the Modal */
+.myImg {
+  display: inline-flex;
+  justify-content: center;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.myImg:hover {
+  /* opacity: 0.7; */
+  transform: scale(1.05);
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: rgb(200, 200, 200);
+  font-family: 'Source Sans Pro', arial, sans-serif;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100%;
+  }
+}
+
+
+/* --------------------------------*/
+
+.mapContainer{
+  padding: 40px 0px 0px;
+  background:black;
+  color:#333333;
+  text-align: center;
+}
+.mapouter {
+  position:relative;
+  text-align:center;
+  height:500px;
+  width:100%;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:100%;
+}
+
+
+/* -------Contact-us---------- */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerInput {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
